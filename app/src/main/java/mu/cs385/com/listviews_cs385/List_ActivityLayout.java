@@ -37,7 +37,7 @@ public class List_ActivityLayout extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(
-                        getApplicationContext(),
+                        List_ActivityLayout.this,
                         ""+ cheeses[position], Toast.LENGTH_SHORT).show();
             }
         });

@@ -22,7 +22,7 @@ public class List_ActivityBasic extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list__basic);
-        
+
 
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1,
@@ -36,7 +36,7 @@ public class List_ActivityBasic extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(
-                        getApplicationContext(),
+                        List_ActivityBasic.this,
                         ""+ cheeses[position], Toast.LENGTH_SHORT).show();
             }
         });
